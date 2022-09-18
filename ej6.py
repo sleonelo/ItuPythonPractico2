@@ -16,7 +16,7 @@ def datos(nombre, horas, turno, dia):
     trabajador[nombre]=[horas,turno,dia]
     return(trabajador)
 
-def calculo(datos, nombre, horas, turno, dias):
+
     
 
-print(trabajador) 
+
