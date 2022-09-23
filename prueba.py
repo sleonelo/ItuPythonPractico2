@@ -55,15 +55,20 @@ while True:
     calculo(dato)  
     continue
 """
-def funcion_prueba(**52,36,69,15,7):
-    print("Diccionario completo: ",parametros)
-    for clave in parametros.keys():
-        print (" Clave: ", clave, end=",")
-    total = 0
-    for value in parametros.values():
-        total += value
-        return total
-    valor_retornado = funcion_prueba(a=10, b=20, c=30, d=40, e=50)
-    print ("\nValor devuelto por la Funcion (1): " , valor_retornado)
-    valor_retornado = funcion_prueba(a=10, b=20)
-    print ("\nValor devuelto por la Funcion (2): " , valor_retornado)
+# def funcion_prueba(**52,36,69,15,7):
+#     print("Diccionario completo: ",parametros)
+#     for clave in parametros.keys():
+#         print (" Clave: ", clave, end=",")
+#     total = 0
+#     for value in parametros.values():
+#         total += value
+#         return total
+#     valor_retornado = funcion_prueba(a=10, b=20, c=30, d=40, e=50)
+#     print ("\nValor devuelto por la Funcion (1): " , valor_retornado)
+#     valor_retornado = funcion_prueba(a=10, b=20)
+#     # print ("\nValor devuelto por la Funcion (2): " , valor_retornado)
+
+try:
+    horas=int(input("ingrese horas: "))
+except ValueError:
+    print("debes escribir un numero!")
