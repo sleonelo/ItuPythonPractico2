@@ -2,9 +2,16 @@
 Ej.:
 Entrada: valor=3; lim_inferior=2; lim_superior=5
 Salida: True"""
-valor=4
-def rango (lim_inferior,lim_superior):
-    if valor>lim_inferior and valor<lim_superior:
-        return True
+lim_inferior=input("ingrese inicio del rango: ")
+lim_superior=input("ingrese fin del rango: ")
+valor=input("ingrese un valor: ")
 
-print(rango(2,5))
+def rango (lim_inferior,lim_superior,valor):
+    if valor>=lim_inferior and valor<=lim_superior:
+        return True
+        #print(f"{valor} esta dentro del rango")
+    else:
+        return False
+        #print(f"{valor} no esta dentro del rango")
+
+rango(lim_inferior,lim_superior,valor)
