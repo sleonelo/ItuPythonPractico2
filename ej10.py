@@ -7,7 +7,7 @@ class ErrorNumeroMalo(BaseException):
 def elige_numero():
     numero = input("Escriba un número: ")
     if numero == str(17):
-        raise ErrorNumeroMalo("El 17 es malévolo")
+        raise ErrorNumeroMalo("El 17 es malo, algo maaaaloooo")
     return numero
 
 elige_numero()
