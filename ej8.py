@@ -4,6 +4,7 @@
  TypeError: En caso de que se envíen valores a las funciones que no sean números. Además deberá aparecer un mensaje que informe Error: Tipo de dato no válido.
  ZeroDivisionError: En caso de realizar una división por cero. Además deberá aparecer un mensaje que informe Error: No es posible dividir entre cero.
 Una vez diseñado el modulo, desarrolle un programa que, utilizando el modulo anterior, haga uso de todas la funciones con los parámetros ingresados por teclado"""
+from operaciones import *
 
 def menu():
     desicion=int(input("Operaciones:\n1) Suma\n2) Resta\n3) Multiplicación\n4) Division\nIngrese la operacion que desea realizar: "))
@@ -45,19 +46,5 @@ def menu():
                             print("Debe ser un numero")
                         except ZeroDivisionError:
                             pass
-                         
-                    
-                                  
-def suma(a,b):
-    return (a+b)
-
-def resta(a,b):
-    return(a-b)
-
-def producto(a,b):
-    return(a*b)
-
-def division(a,b):
-    return (a/b)
-
+                                       
 menu()
