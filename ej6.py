@@ -6,6 +6,7 @@ Desarrolle una funci처n que permita ingresar por teclado la siguiente informaci�
 trabajador={}
 dato=[]
 while True:
+    
     nombre=str(input("\nIngrese nombre del trabajador: "))
     while True:
      try:
@@ -13,10 +14,15 @@ while True:
          break
      except ValueError:
          print("Debes escribir un numero!")
-    
-    
+
     turno=int(input("\nTipo de turno:\n1) Diurno\n2) Nocturno\nSeleccione una opci처n:  "))    
+    while turno not in (1,2):
+        turno=int(input("\nTipo de turno:\n1) Diurno\n2) Nocturno\nSeleccione una opci처n:  "))
+
     dia=input("\nTipo de dia:\nA) Laborable \nB) Festivo\nSeleccione una opci처n:  ")
+    while dia not in ("A","B"):    
+        dia=input("\nTipo de dia:\nA) Laborable \nB) Festivo\nSeleccione una opci처n:  ")
+    
 
     def datos(nombre, horas, turno, dia):
         trabajador[nombre]=[horas,turno,dia]
